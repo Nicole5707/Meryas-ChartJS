@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Meryas-ChartJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Meryas-ChartJS is a dynamic React.js application created for an interview test at Meryas Home. The project's primary objective is to develop an interactive data visualization component using React, Redux Toolkit, React Redux, Tailwind CSS, and Chart.js. This component empowers users to filter and visualize data obtained from the provided API, which contains detailed product information. The centerpiece of this project is an interactive bar chart that adapts in real-time based on the selected time period.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Description](#description)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [API Reference](#api-reference)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Meryas-ChartJS fulfills the following key requirements:
 
-### `npm test`
+1. **React Application**: The project creates a new React application for the data visualization component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Interactive Bar Chart**: A single React functional component is implemented, featuring:
+   - An interactive bar chart that employs Chart.js for data visualization.
+   - Data sourced from the [FakeStore API](https://fakestoreapi.com/products) to populate the chart.
+   - Utilization of Redux Toolkit and React Redux for robust state management.
+   - A user-friendly, interactive chart that enables data filtering based on user-selected time periods (e.g., months, days).
 
-### `npm run build`
+3. **Stylish UI**: The component is elegantly styled using Tailwind CSS to enhance design, layout, and user interactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Best Practices**: The project adheres to best practices for React development, ensuring code quality and maintainability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the project locally, follow these steps:
 
-### `npm run eject`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Nicole5707/Meryas-ChartJS.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Meryas-ChartJS
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the Development Server**:
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Access the Project**:
+   Open your web browser and access the project at `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once the project is running, users can interact with the data visualization component to explore and analyze product data obtained from the FakeStore API. Select your preferred time period or apply filters to dynamically update the chart and gain valuable insights from the data.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+Meryas-ChartJS leverages a range of cutting-edge technologies and libraries, including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React.js**: As the core framework for building the interactive data visualization component.
+- **Redux Toolkit**: For efficient state management and data flow.
+- **React Redux**: To seamlessly connect React components with the Redux store.
+- **Tailwind CSS**: For a modern and responsive user interface design.
+- **Chart.js**: Powering the interactive bar chart for data visualization.
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The project follows a structured directory layout:
 
-### Making a Progressive Web App
+- `src/`: Home to the application's source code.
+  - `api/`: Manages data fetching and API interactions.
+    - `data.js`: Defines API endpoints for fetching product data.
+  - `app/`: Responsible for Redux Toolkit and state management.
+    - `store.js`: Configures the Redux store.
+  - `Components/`: Holds a collection of React components.
+    - `BarChart.jsx`: Implements the interactive bar chart component.
+  - `index.css`: Contains the project's CSS styles.
+  - `index.js`: Serves as the entry point, rendering the primary application component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## API Reference
 
-### Advanced Configuration
+The project fetches detailed product data from the [FakeStore API](https://fakestoreapi.com/products) to populate the data visualization component. This API provides a wealth of sample product information, which is used to create engaging charts and data visualizations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
